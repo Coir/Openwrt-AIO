@@ -22,7 +22,7 @@ on:
 
 env:
   REMOTE_PATH: drive:Public/Openwrt/Package
-  VERSION: 22.03.3
+  VERSION: 21.02-SNAPSHOT
   USE_TG: true
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [x86-64, ramips-mt7621, rockchip-armv8]
+        target: [rockchip-armv7]
 
     steps:
       - name: Checkout
